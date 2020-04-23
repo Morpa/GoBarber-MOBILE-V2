@@ -32,6 +32,8 @@ This project was developed with the following technologies:
 
 - [React Native](https://reactnative.dev/)
 - [Typescript](https://www.typescriptlang.org/)
+- [Styled Components](https://styled-components.com/)
+- [React Navigation](https://reactnavigation.org/)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [VS Code](https://code.visualstudio.com/)
