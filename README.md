@@ -30,7 +30,7 @@
 
 This project was developed with the following technologies:
 
-- [React Natice](https://reactnative.dev/)
+- [React Native](https://reactnative.dev/)
 - [Typescript](https://www.typescriptlang.org/)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
