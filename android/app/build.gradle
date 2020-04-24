@@ -228,4 +228,4 @@ project.ext.vectoricons = [
   iconFontNames: ['Feather.ttf']
 ]
 
-apply from "../../node_modules/react-native-vector-icons/fonts.gradle"
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
