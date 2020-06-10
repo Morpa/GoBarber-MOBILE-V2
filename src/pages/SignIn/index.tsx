@@ -20,14 +20,7 @@ import getValidationErrors from '../../utils/getValidationErrors';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 
-import {
-  Container,
-  Title,
-  ForgotPassword,
-  ForgotPasswordText,
-  CreateAccountButton,
-  CreateAccountButtonText,
-} from './styles';
+import * as S from './styles';
 
 import logoImg from '../../assets/logo.png';
 
@@ -90,11 +83,11 @@ const SignIn: React.FC = () => {
           keyboardShouldPersistTaps="handled"
           contentContainerStyle={{ flex: 1 }}
         >
-          <Container>
+          <S.Container>
             <Image source={logoImg} />
 
             <View>
-              <Title>Faça o seu logon</Title>
+              <S.Title>Faça o seu logon</S.Title>
             </View>
 
             <Form ref={formRef} onSubmit={handleSignIn}>
@@ -132,21 +125,21 @@ const SignIn: React.FC = () => {
               </Button>
             </Form>
 
-            <ForgotPassword
+            <S.ForgotPassword
               onPress={() => {
                 console.log('Clicado');
               }}
             >
-              <ForgotPasswordText>Esqueci minha senha</ForgotPasswordText>
-            </ForgotPassword>
-          </Container>
+              <S.ForgotPasswordText>Esqueci minha senha</S.ForgotPasswordText>
+            </S.ForgotPassword>
+          </S.Container>
         </ScrollView>
       </KeyboardAvoidingView>
 
-      <CreateAccountButton onPress={() => navigation.navigate('SignUp')}>
+      <S.CreateAccountButton onPress={() => navigation.navigate('SignUp')}>
         <Icon name="log-in" size={20} color="#ff9000" />
-        <CreateAccountButtonText>Criar uma conta</CreateAccountButtonText>
-      </CreateAccountButton>
+        <S.CreateAccountButtonText>Criar uma conta</S.CreateAccountButtonText>
+      </S.CreateAccountButton>
     </>
   );
 };

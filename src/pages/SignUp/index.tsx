@@ -20,7 +20,7 @@ import getValidationErrors from '../../utils/getValidationErrors';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 
-import { Container, Title, BackToSignIn, BackToSignInText } from './styles';
+import * as S from './styles';
 
 import logoImg from '../../assets/logo.png';
 
@@ -89,11 +89,11 @@ const SignUp: React.FC = () => {
           keyboardShouldPersistTaps="handled"
           contentContainerStyle={{ flex: 1 }}
         >
-          <Container>
+          <S.Container>
             <Image source={logoImg} />
 
             <View>
-              <Title>Crie sua conta</Title>
+              <S.Title>Crie sua conta</S.Title>
             </View>
 
             <Form ref={formRef} onSubmit={handleSignUp}>
@@ -143,14 +143,14 @@ const SignUp: React.FC = () => {
                 Entrar
               </Button>
             </Form>
-          </Container>
+          </S.Container>
         </ScrollView>
       </KeyboardAvoidingView>
 
-      <BackToSignIn onPress={() => navigation.goBack()}>
+      <S.BackToSignIn onPress={() => navigation.goBack()}>
         <Icon name="arrow-left" size={20} color="#fff" />
-        <BackToSignInText>Voltar para o logon</BackToSignInText>
-      </BackToSignIn>
+        <S.BackToSignInText>Voltar para o logon</S.BackToSignInText>
+      </S.BackToSignIn>
     </>
   );
 };
